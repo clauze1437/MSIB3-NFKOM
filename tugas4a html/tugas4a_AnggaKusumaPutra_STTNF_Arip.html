@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Register Produk</title>
+</head>
+<body>
+    <form name="FormProduk" method="GET" action="#">
+    <table border="0" cellpadding="15" width="40%">
+        <thead>
+            <tr bgcolor="grey">
+                <th colspan="2">Form Register Albums</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr bgcolor="grey">
+                <th colspan="2">
+                    <input type="submit" name="proses" value="kirim" />&nbsp;&nbsp;
+                    <input type="reset" name="unproses" value="Bbtal" />
+                </th>
+            </tr>
+        </tfoot>
+    </tbody>
+    <tr>
+        <td width="20%"><label>Albums</label></td>
+        <td>
+            <input type="text" name="nama" size="20" maxlength="30"/>
+        </td>
+        <tr>
+            <td><label>Jenis Produk</label></td>
+            <td>
+                <select name="Search Albums">
+                    <option value="">-- Kategori Produk --</option>
+                    <option value="SMA">Kulkas</option>
+                    <option value="D3">AC</option>
+                    <option value="S1" >Tv</option>
+                </select>
+            </td>
+            <tr>
+            <td width="20%"><label>Harga</label></td>
+						<td>
+							<input type="number" name="harga" value=""
+							       size="20" maxlength="30"/>
+						</td>
+            </tr>
+            <tr>
+                <td width="20%"><label>Stok</label></td>
+                            <td>
+                                <input type="number" name="stok" value=""
+                                       size="20" maxlength="30"/>
+                            </td>
+                </tr>
+            <tr>
+                <td width="20%"><label>Foto</label></td>
+                <td>
+                    <input type="image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHkAeQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAIDBgcIBQH/xABJEAABAwIBBgYMCA8AAAAAAAAAAQIDBBEFBhIhMXKxEzJBUXHBBxQjJCUmYWJzkbPRFiIzY3SSk6M0QkNEUlNUZHWBobLC0uH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREh/9oADAMBAAIRAxEAPwDeIAAAAADDcUxvEGTSshnzEa9yIjWpoS5i+I4risl0diFTbmbIqbijbDnNal3KiJzqpCqcawqlRe2cSo4rfrJ2p1mkaqKrq2yyLwszY0zpHKqrmp5b9B4c7LDBvapy7yXpkVZMapVRNfBqr9yKWsN7IOTOJ4gyhpMRRZn3zVkjdG1V5kVyIl9Oo0EyR0E7JGq5M1dOatlVOVL8l0I0r3z1THSPe9c7QrlVVTXzjE3rq4GoMieyXLRuiw7KNz5YFVGx1lruZzZ/Onl1899Zt5FRUumoivoAAAAAAAAAA1LXy3yxq4r/AJu933yp1Fupai3LFeubl3O+/GgmZ9WVV/yJMzksaiPmGw+Ccd+jJz8zzC6qPWZV266mp6uBI0clSzMVyrxdCp1mOVSawPGmaRom3qWJ53UTZ01limbesiTzupQK5WWkbtIdQs4idBzPPH3Ru0m86YZxE6CVVQAIAAAAAAAANFYnVJ8PpodKLG2dyryLnP0f2L60PRkk+KeJitZH8Mq1raeKORyvdwrURXcd10+NfQX+2pLfK3T0cf8AqaRXUv0LdTyalyXXShMlqn21p9RPcQpaqWyokjk6FA8+ZU50LNInf0O11KX5ppVVe6y/aO95TQzypVtj4RyskVEeirfOtpT+oEyob3Ru0m86QbxU6DnOdO6M2k3nRjeKnQSq+gAgAAAAAAAA5xxyS2WFSv6L6hPvP+H3h/KQsclX4VVy8iTVCJ9qpQ2bymoia6VVTWWHuvyltZSlz7gUSLrPlB+Hw7RQ9xVh63r4doD2JkvKzaTedEt4qdBzxL8tHtpvOh26kJVfQAQAAAAAAAAct46/xixJU/FrKhPXIvuLDJCnHH2ygxZP3+o9q4jMeWI9BHn3PuhDbIV8JoKLj3lzDHXxCHaIjnl7C3eEYdrqAyGVe7xbbd50SmpDnF7r1MSfON3odHJqJVfQAQAAAAAAAAcm4662UOL3/b6j2riGjiRj6+MWL/xCo9q4ho4qJDXleeRkcM4C+ryRhTvCMK+d7yAryThTu/4unqLoyJX3q4dP5Vu9DpRNRzK1162D0rd6HTZKoACAAAAAAAADkbKFfGLF/p9R7RxBRxmeU3Y+ytbjOI1MeCzzwzVU0rHQvY+7XPVU0It9SmMVeB41QqvbeD4jDbWr6V6J67FRFRx9uR3SIxc2RcxU5HaFK0ei6luBWrlJOFu7+j6V3KRFUk4avfkf89yge9C69dT+lZvQ6hNC5E5EV+UFVFWSqtLh8b0cszm6ZLLqYnL06uk3ygqvoAIAAAAAAAAAAAjz0VLUpappoZU5pI0dvPJqsi8l6tVWoyfwxyry9qsRfWiHvADDansW5GVGvBWRr8zPIzc4iU/YjyUpq+CqhhqkSJc7gXVDnMf030216PKZ6AKY2NjY1kbUaxqWa1qWREKgAAAAAAD/2Q==" alt="submit" width="48" height="48"/>
+                </td>
+            </tr>
+        </tr>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Register Produk</title>
+</head>
+<body>
+    <form name="FormAlbum" method="GET" action="#">
+    <table border="0" cellpadding="15" width="40%">
+        <thead>
+            <tr bgcolor="grey">
+                <th colspan="2">Search your Albums</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr bgcolor="grey">
+                <th colspan="2">
+                    <input type="submit" name="proses" value="kirim" />&nbsp;&nbsp;
+                    <input type="reset" name="unproses" value="Bbtal" />
+                </th>
+            </tr>
+        </tfoot>
+    </tbody>
+    <tr>
+        <td width="20%"><label>Nama</label></td>
+        <td>
+            <input type="text" name="nama" size="20" maxlength="30"/>
+        </td>
+        <tr>
+            <td><label>Albums</label></td>
+            <td>
+                <select name="Search Albums">
+                    <option value="">-- Cathegory Albums --</option>
+                    <option value="SMA">BTS</option>
+                    <option value="D3">TXT</option>
+                    <option value="S1" >NCT</option>
+                </select>
+            </td>
+            <tr>
+            <td width="20%"><label>Harga</label></td>
+						<td>
+							<input type="number" name="harga" value=""
+							       size="20" maxlength="30"/>
+						</td>
+            </tr>
+            <tr>
+                <td width="20%"><label>Stok</label></td>
+                            <td>
+                                <input type="number" name="stok" value=""
+                                       size="20" maxlength="30"/>
+                            </td>
+                </tr>
+            <tr>
+                <td width="20%"><label>Foto</label></td>
+                <td>
+                    <input type="image" src="https://ibighit.com/bts/images/bts/discography/map_of_the_soul-7/img01.jpg" alt="submit" width="90" height="90"/>
+                </td>
+            </tr>
+        </tr>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
